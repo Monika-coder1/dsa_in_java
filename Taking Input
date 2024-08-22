@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TakingInput {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+//        next()method
+        System.out.println("enter your name");
+        String name = sc.next();
+        System.out.println("Name is:"+name);
+//        nextLine()method
+        System.out.println("enter your name_1");
+        String name_1 = sc.nextLine();
+        System.out.println("name is:"+name_1);
+//      nextInt()method
+        System.out.println("enter your lucky number");
+        int num_1 = sc.nextInt();
+
+        System.out.println("lucky Number is:"+ num_1 );
+    }
+}
