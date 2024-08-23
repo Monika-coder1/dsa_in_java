@@ -1,0 +1,94 @@
+public class Operators {
+    public static void main(String[] args) {
+//            ARITHMETIC OPERATOR
+        int p = 20, q = 10;
+
+        System.out.println(p + q);
+        System.out.println(p - q);
+        System.out.println(p * q);
+        System.out.println(p / q);
+        System.out.println(p%q);
+
+//                RELATION OPERATOR
+        int k = 10, m = 15;
+
+        System.out.println(k == m); //false
+        System.out.println(k != m); //true
+        System.out.println(k <= m); //true
+        System.out.println(k >= m); //false
+        System.out.println(k < m); //true
+        System.out.println(k > m); //false
+
+//      LOGICAL OPERATOR
+        int  s = 15, e = 10, r = 5;
+        //&& operator
+        System.out.println((s > e) && (s >r));
+        System.out.println((s > e) && (s >r));
+
+        // || operator
+        System.out.println((r > e) || (s >r));
+        System.out.println((s > e) || (e >r));
+        System.out.println((s > e) || (e >r));
+
+
+        //! operator
+        System.out.println(!(s == e));
+        System.out.println(!(s > e));
+
+
+//      ASSIGNMENT OPERATOR
+        int x = 10;
+        int y = x;
+
+        // =
+        x = y;
+        System.out.println(y); //10
+
+        //+=
+        x += y; // x = x + y ,x = 10 + 10 = 20
+        System.out.println(x);
+
+        x -= y; // x = x - y, x = 20 - 10 = 10
+        System.out.println(x);
+
+        x *= y; // x = x * y
+        System.out.println(x); //100
+
+        x /= y; //x = x/y, x = 100/10 = 10
+        System.out.println(x);
+
+
+//      UNARY OPERATOR
+
+        int a  = 5, b = 5;
+        System.out.println(a++);
+        System.out.println(a);
+
+        System.out.println(++b);
+        System.out.println(b);
+
+        int c = a++;
+        int d = ++b;
+
+        System.out.println(c);
+        System.out.println(d);
+
+
+        System.out.println(a);
+        System.out.println(b);
+
+//      BITWISE OPERATOR
+
+        int n = 9,  o= 10;
+
+        System.out.println(n | o);
+        System.out.println(n & o);
+        System.out.println(n ^ o);
+        System.out.println(n << 1);
+        System.out.println(n << 2);
+        System.out.println(o >> 1);
+        System.out.println(o >> 2);
+        
+
+    }
+}
