@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class ConditionalOperator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter value:");
+        int value = sc.nextInt();
+
+// write a program to print the value if it is even and divisible by 3
+
+//      && Operator
+        if(value % 2 == 0 && value % 3 == 0){
+            System.out.println("found the value:" + value);
+        }
+
+
+//  write a program to print the value if it is  divisible by 3 or 5
+
+//     || Operator
+        System.out.println("enter the value:");
+        int Value = sc.nextInt();
+
+        if(Value % 5 == 0  || Value % 3 == 0)
+        {
+            System.out.println("Value is:" + Value);
+        }
+
+//     Ternary Operator
+        System.out.println("enter num:");
+        int num = sc.nextInt();
+
+        String ans;
+        ans = (num % 2 == 0)?"even":"odd";
+        System.out.println(ans);
+    }
+}
