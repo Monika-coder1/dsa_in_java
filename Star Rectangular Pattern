@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class StarRectangularPattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two number:");
+        int r = sc.nextInt();
+        int c = sc.nextInt();
+        for (int i = 1 ; i <=r ; i ++)  // rows
+        {
+            for (int j= 1; j<=c; j++)  //columns
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
