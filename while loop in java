@@ -1,0 +1,33 @@
+//Print the sum of the first n natural number where n is tha input with while loop
+
+
+import java.util.Scanner;
+
+public class WhileLoopInJava {
+    public static void main(String[] args) {
+        Scanner Sc = new Scanner(System.in);
+
+//            //print 1 to n
+            int n = Sc.nextInt();
+//            int num = 1;
+//            while (num <= n){
+//                System.out.println(num);
+//                num ++;
+//
+//
+//            }
+
+
+            //print sum
+        int sum = 0;
+        int num = 1;
+
+        while (num <= n)
+        {
+            sum = sum + num;
+            num ++;
+
+        }
+        System.out.println(sum);
+    }
+}
