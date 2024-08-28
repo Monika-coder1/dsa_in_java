@@ -1,0 +1,51 @@
+//Print the sum of the first n natural number where n is tha input with for loop
+
+
+import java.util.Scanner;
+
+public class ForLoopInJava {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        //print 1 to n numbers
+
+        System.out.println("enter number: ");
+        int n = sc.nextInt();
+
+        for(int num1 = 1; num1 <= n; num1 ++ )
+        {
+            System.out.println(num1);
+        }
+
+        //sum of 1 to n
+
+        System.out.println("enter s:");
+        int s = sc.nextInt();
+        int sum = 0;
+        for (int num2 = 1; num2 <= s; num2++)
+        {
+            sum = sum + num2;
+            System.out.println(sum);
+        }
+
+
+        //print 1 to n numbers in reverse order
+
+        System.out.println("enter a:");
+        int a = sc.nextInt();
+        for (int num3 = a ; num3 >= 1; num3--)
+        {
+            System.out.println(num3);
+        }
+
+
+        // print 1 to n numbers in reverse
+
+        System.out.println("enter b:");
+        int b = sc.nextInt();
+        for (int num4 = b ; num4 >=1 ; num4 -= 2) // num -= 2, num = num -2
+        {
+            System.out.println(num4);
+        }
+    }
+}
