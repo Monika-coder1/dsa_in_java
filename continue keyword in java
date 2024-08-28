@@ -1,0 +1,30 @@
+
+// print the value between 1 and 50 except for the multiple of 3
+
+public class ContinueKeyword {
+    public static void main(String[] args) {
+        // for loop
+
+        myloop:for (int num = 1; num <= 50; num ++) // labels
+        {
+            if (num % 3 == 0)
+            {
+                continue myloop;
+            }
+            System.out.println(num);
+        }
+
+        //while
+        int a = 1;
+        secondloop:while (a <=50)
+        {
+            if (a % 3 == 0)
+            {
+                a++;
+                continue secondloop;
+            }
+            System.out.println(a);
+            a++;
+        }
+    }
+}
